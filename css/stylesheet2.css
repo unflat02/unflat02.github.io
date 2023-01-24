@@ -9,8 +9,9 @@
 
 body {
     background-color: #fafafa;
-    background-image: none;
-    background-repeat: no-repeat;
+    background-image: url(/images/crow.jpeg);
+    background-size: 60em;
+    background-repeat:repeat;
 }
 
 header {
@@ -29,8 +30,12 @@ nav, footer {
     padding: 2em;
 }
 
+.copy {
+    padding:2em;
+}
+
 h1 {
-    color: rgb(98, 199, 15);
+    color: rgb(171, 237, 254);
     font-size: 5em;
     font-family: 'DM Sans', sans-serif;
     line-height: normal;
