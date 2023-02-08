@@ -14,20 +14,20 @@
 
 body {
     background-color: #fafafa;
-    background-image: url(/images/crow.jpeg);
-    background-size: 60em;
+    background-image: url(/unflat02.github.io/images/crow.jpeg);
+    background-size: 500em;
     background-repeat:repeat;
 }
 
 header {
     text-align: center;
-    padding: 2em;
 }
 
 #mainNav {
     list-style-type: none;
     font-size: 1em;
     text-align: center;
+    display: inline;
 }
 
 header, nav, footer {
@@ -39,7 +39,13 @@ header, nav, footer {
 
 nav, footer {
     font-size: .8em;
-    padding: 2em;
+}
+
+nav, header {
+    background-image: url(/unflat02.github.io/images/twisp.jpeg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding-top: 1em;
 }
 
 .copy {
@@ -75,9 +81,32 @@ article p, footer p, hr {
     margin-top: 2em;
 }
 
-.bio {
-    padding: 2em;
+
+/* Columns */
+
+.columns {float:right;}
+.col-1 {width: 41.66%;}
+.col-2 {width: 58.33%;}
+.col-12 {width: 100%;}
+
+/* End Columns CSS */
+
+div.expContainer>p {
+    width: 50%;
+    padding-bottom: 2em;
+    font-size: 1.2em;
 }
+
+div.expRow {
+    margin-bottom: 2em;
+}
+
+.textPad {
+    padding-right: 2em;
+    font-size: 1em;
+}
+
+
 
 a:link {
     color: rgb(51, 102, 153); 
@@ -90,3 +119,5 @@ a:visited {
 a:hover {
     color: rgb(0, 177, 204);
 }
+
+
