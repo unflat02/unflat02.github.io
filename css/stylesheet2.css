@@ -48,6 +48,11 @@ nav, header {
     padding-top: 1em;
 }
 
+.bio {
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
 .copy {
     padding:2em;
 }
@@ -85,11 +90,22 @@ article p, footer p, hr {
 /* Columns */
 
 .columns {float:right;}
-.col-1 {width: 41.66%;}
-.col-2 {width: 58.33%;}
+.col-1 {width: 40%;}
+.col-2 {width: 60%;}
 .col-12 {width: 100%;}
 
 /* End Columns CSS */
+
+div.expContainer {
+    font-size: .8em;
+}
+
+div.expContainer>h2 {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 2em;
+    
+}
 
 div.expContainer>p {
     width: 50%;
@@ -99,6 +115,8 @@ div.expContainer>p {
 
 div.expRow {
     margin-bottom: 2em;
+    padding: 1%;
+    background-color: rgba(0, 0, 0, .05);
 }
 
 .textPad {
@@ -106,7 +124,21 @@ div.expRow {
     font-size: 1em;
 }
 
+.flexy {
+    padding: 2em;
+}
 
+.flexbox {
+    clear: right;
+    display: flex;
+    justify-content: space-between;
+}
+
+.flexbox > div {
+        width: 30%;
+        padding: 1%;
+        background-color: rgba(0, 0, 0, .05);
+    }
 
 a:link {
     color: rgb(51, 102, 153); 
