@@ -91,16 +91,12 @@ article p, footer p, hr {
     margin-top: 5%;
 }
 
-
 /* Columns */
-
 .columns {float:right;}
 .col-1 {width: 40%;}
 .col-2 {width: 60%;}
 .col-12 {width: 100%;}
-
 /* End Columns CSS */
-
 
 div.expContainer {
     font-size: .8em;
