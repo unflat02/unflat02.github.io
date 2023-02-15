@@ -12,9 +12,15 @@
     margin: auto;
 }
 
+.column {
+    width: 33.33%;
+    float: left;
+    margin: 10%;
+    }
+
 body {
     background-color: #fafafa;
-    background-image: url(/unflat02.github.io/images/crow.jpeg);
+    background-image: url(/images/crow.jpeg);
     background-size: 500em;
     background-repeat:repeat;
 }
@@ -29,7 +35,7 @@ body {
 
 header {
     text-align: center;
-    background-image: url(/unflat02.github.io/images/twisp.jpeg);
+    background-image: url(/images/twisp.jpeg);
     background-size: 100%;
     background-repeat: no-repeat;
     padding-top: 5%;
@@ -72,6 +78,10 @@ h1 {
     text-transform: uppercase;
 }
 
+h2, h3 {
+    color: rgb(198, 225, 231);
+}
+
 img {
     width: 100%;
     height: auto;
@@ -93,8 +103,8 @@ article p, footer p, hr {
 
 /* Columns */
 .columns {float:right;}
-.col-1 {width: 40%;}
-.col-2 {width: 60%;}
+.col-1 {width: 60%;}
+.col-2 {width: 40%;}
 .col-12 {width: 100%;}
 /* End Columns CSS */
 
@@ -129,7 +139,7 @@ div.expContainer>p {
 }
 
 .Activities {
-    padding-right: 5%;
+    padding-left: 5%;
 }
 
 .flexbox {
@@ -158,4 +168,57 @@ a:visited {
 
 a:hover {
     color: rgb(0, 177, 204);
+}
+
+/* Media Queries */
+
+
+@media only screen and (max-width: 651px) {
+
+    h1{
+        font-size: 2em;
+    }
+    h2, h3{
+        font-size: 0.6em;
+    }
+
+    body {
+        font-size: 1em;
+    }
+
+    ul li {
+        font-size: .9em;
+    }
+    
+    div.bio > p {
+        font-size: .7em;
+    }
+
+    div.expContainer>p {
+        width: 100%;
+    }
+    
+    .columns {
+        float: none;
+        width: fit-content;
+        font-size: 1em;
+    }
+
+    .flexbox {
+        clear: right;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .flexbox > div {
+        width: 100%;
+        padding: 3%;
+        background-color: rgba(0, 0, 0, .05);
+        font-size: .7em;
+    }
+
+    #instagram {
+        visibility: hidden;
+    }
+
 }
