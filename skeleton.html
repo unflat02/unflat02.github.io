@@ -9,14 +9,14 @@
     <title>Chloe's Sandbox</title>
 
     <!-- CSS Link -->
-    <link href="css/stylesheet2.css" rel="stylesheet" type="text/css" >
+    <link href="css/stylesheet2.css" rel="stylesheet" type="text/css" > 
 
     
     <!-- Normailize Link -->
-    <!-- <link href="css/normalize.css" rel="stylesheet" type="text/css" > -->
+    <link href="css/normalize.css" rel="stylesheet" type="text/css" >
 
     <!-- Skeleton Link -->
-    <!-- <link href="css/skeleton.css" rel="stylesheet" type="text/css" > -->
+    <link href="css/skeleton.css" rel="stylesheet" type="text/css" >
 
     <!-- Font Link -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -34,7 +34,8 @@
         <img id="instagram" src="/images/insta.png" alt="instagram">
     </a>
 
-    <div id="wrapper">
+    <div class="container">
+
         <header>
         
             <!--Navigation-->
@@ -48,20 +49,19 @@
                 </ul>
             </nav>
     
-            <h1>Chloe Unflat</h1> <!--Name-->
+            <div class="row">
+                <h1>Chloe Unflat</h1> <!--Name-->
     
-            <h2>DSGN 360: Digital Media Design 1</h2> <!--Course Title-->
+                <h2>DSGN 360: Digital Media Design 1</h2> <!--Course Title-->
     
-            <h3>Winter 2023</h3> <!--Quarter and Year-->
+                <h3>Winter 2023</h3> <!--Quarter and Year-->
+            </div>
         
         </header>
-    
-        <article>
-            
-            <!--<img src="images/twisp.jpeg" alt="twisp"/>-->
-        
-            <div class="bio">
 
+        <article>
+
+            <div class="row">
                 <img src="images/skichloe.JPG" alt="ski">
 
                 <p>Hey there! </p>            
@@ -69,83 +69,80 @@
                 <hr>
             </div>
 
-            <div class="expContainer">
-            
+            <div class="row">
                 <h2>Activities</h2>
                 <br>
-                
-                <div class="expRow columns col-12 ">
-                    <div class="columns col-2">
-                        <div class="Activities">
-                            <img src="images/bike.jpeg">
-                        </div>
-                    </div>
-                    <div class="columns col-1">
-                        <h4>Get Outside</h4>
-                        <p>I really like to spend time outside exploring with friends. Climbing, running, hiking, backpacking, kayaking, swimming, and exploring all bring me so much joy. It's nice to slow down and spend time outside. On this trip, we went around three lakes and I got a flat tire.</p>
-                    </div>
-                </div>
-                
-                <div class="expRow columns col-12 clearRight">    
-                    <div class="columns col-2">
-                        <div class="Activities">
-                            <img src="images/concert.jpeg">
-                        </div>
-                    </div>
-                    <div class="columns col-1">
-                        <h4>Listen to Music</h4>
-                        <p>I love to go see live music. As a kid, this started by spending time in the kitchen listening to music with my dad, then he would take me out to see live performances. This year, my goal is to go to more shows. I just went up to Canada to see the Vista Kicks with some friends.</p>
-                    </div>
-                </div>
-                    
-                <div class="expRow columns col-12 clearRight">
-                    <div class="columns col-2">
-                        <div class="Activities">
-                            <img src="images/food.jpeg">
-                        </div>
-                    </div>
-                    <div class="columns col-1">
-                        <h4>Make Food</h4>
-                        <p>Yay, food is yummy. I'm always trying new recipes, making ones I learned as a kid, and making them up! This is a picuture of some korean food I made this summer. We got some cumcumber salad, kimchee, bok choy, and braised tofu going on. #getinmybelly</p>
-                    </div>
-                </div> 
-                
-                <div class="expContainer">
-                    <hr>
-                    <br>
-                    <br>
-                    <h2>What I've been up to</h2>
-                </div>
             </div>
 
-            <div class="flexbox">
-                <div class="textPad">
-                    <div>
-                        <img src="images/sibs.jpeg" alt="sibs">
+            <div class="row">
+
+                <div class="four columns u-full-width">
+                    <img src="images/bike.jpeg">
+                </div>
+
+                <div class="eight columns">
+                    <h4>Get Outside</h4>
+                        <p>I really like to spend time outside exploring with friends. Climbing, running, hiking, backpacking, kayaking, swimming, and exploring all bring me so much joy. It's nice to slow down and spend time outside. On this trip, we went around three lakes and I got a flat tire.</p>
+                </div>
+                
+            </div>
+
+            <div class="row">
+
+                <div class="four columns u-full-width">
+                    <img src="images/concert.jpeg">
+                </div>
+
+                <div class="eight columns">
+                    <h4>Listen to Music</h4>
+                        <p>I love to go see live music. As a kid, this started by spending time in the kitchen listening to music with my dad, then he would take me out to see live performances. This year, my goal is to go to more shows. I just went up to Canada to see the Vista Kicks with some friends.</p>
+                </div>
+
+            </div>
+
+            <div class="row">
+                
+                <div class="four columns u-full-width">
+                    <img src="images/food.jpeg">
+                </div>
+                
+                <div class="eight columns">
+                    <h4>Make Food</h4>
+                        <p>Yay, food is yummy. I'm always trying new recipes, making ones I learned as a kid, and making them up! This is a picuture of some korean food I made this summer. We got some cumcumber salad, kimchee, bok choy, and braised tofu going on. #getinmybelly</p>
+                </div>
+
+            </div>
+
+            <div class="row">
+                <hr>
+                <h2>What I've Been Up To</h2>
+            </div>
+
+            <div class="row">
+                <div class="four columns backtint">
+                    <img src="images/sibs.jpeg" alt="sibs">
                         <h4>Hangin' Out</h4>
                         <p>When I get the chance to go back home to Portland, I love to hang out with my siblings. We like to go to the Portland Art Museum, play board games, and go on hike and walks around our neighborhood. We get along, most of the time...</p>
-                    </div>
+
                 </div>
 
-                <div class="textPad">
-                    <div>
-                        <img src="images/bay.jpeg" alt="sibs">
+                <div class="four columns backtint">
+                    <img src="images/bay.jpeg" alt="sibs">
                         <h4>Jumpin' in the Bay</h4>
                         <p>Once a month, (more often when it gets warmer), I jump in the bay. I call it my jump of the month. I try my best to get friends, and sometimes strangers, to join me. It us a great way to feel grounded.</p>
-                    </div>
+
                 </div>
 
-                <div class="textPad">
-                    <div>
-                        <img src="images/soccer.JPG" alt="sibs">
+                <div class="four columns backtint">
+                    <img src="images/soccer.JPG" alt="sibs">
                         <h4>Kickin' Around</h4>
                         <p>When I'm not hiding in the design building, you'll probably find me on campus on Harrington field. I am a member of the Western women's soccer program. I like to think of it as adult recess, with a little extra fitness.</p>
-                    </div>
+
                 </div>
             </div>
-            
-        </article> 
-        
+
+        </article>
+
         <footer>
             
             <hr>
@@ -161,7 +158,7 @@
         
         </footer>
 
-    </div> 
+    </div>
         
 </body>
 

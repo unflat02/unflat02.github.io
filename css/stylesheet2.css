@@ -15,7 +15,7 @@
 .column {
     width: 33.33%;
     float: left;
-    margin: 10%;
+    /*margin: 10%;*/
     }
 
 body {
@@ -102,7 +102,7 @@ article p, footer p, hr {
 }
 
 /* Columns */
-.columns {float:right;}
+.columns {float:left;}
 .col-1 {width: 60%;}
 .col-2 {width: 40%;}
 .col-12 {width: 100%;}
@@ -150,6 +150,11 @@ div.expContainer>p {
 
 .flexbox > div {
     width: 30%;
+    background-color: rgba(0, 0, 0, .05);
+    padding: 1%;
+}
+
+.backtint{
     background-color: rgba(0, 0, 0, .05);
     padding: 1%;
 }
