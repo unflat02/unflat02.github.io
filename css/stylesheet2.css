@@ -98,8 +98,13 @@ img#bluebird {
     100% { transform: translate( 0%, 0); }
 }
 
-
 img#blueblue {
+    display: inline;
+    position: relative;
+    bottom: 0px; /* start */
+    bottom: 0px; /* end */
+    z-index: -1;
+
     animation-name: blueblue;
     animation-duration: 5s;
     animation-iteration-count: 2;
