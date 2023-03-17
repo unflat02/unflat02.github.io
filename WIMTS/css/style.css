@@ -1,0 +1,547 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Cutive Mono', monospace;
+    font-family: 'Lora', serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Circle Pulse */
+/* animation: circlePulse .7s ease-in-out infinite; */
+
+@keyframes circlePulse {
+    0% {
+        transform: scale(1.2);
+        transition: .3s ease-in-out all;
+    }
+
+    50% {
+        transform: scale(0.9);
+    }
+
+    100% {
+        transform: scale(1.2);
+    }
+}
+
+/* nav */
+.nav {
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden;
+}
+
+
+.nav-dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dot-box {
+    /* background-color: white; */
+    width: 2em;
+    height: 2em;
+    margin: 2em;
+    border-radius: 50%;
+    
+    border-color: black;
+    border-width: 1pt;
+    border-style: double;
+    animation: circlePulse 3s ease-in-out infinite;
+}
+
+.dot-box:hover {
+    transform: scale(1.1);
+}
+
+
+.dot-box:hover:nth-child(1) {
+    background-color: rgb(146, 194, 189);
+}
+
+.dot-box:hover:nth-child(2) {
+    background-color: rgb(247, 199, 195);
+}
+
+.dot-box:hover:nth-child(3) {
+    background-color: rgb(254, 192, 16);
+}
+
+.dot-box a {
+
+}
+
+.dot-box a:hover {
+
+}
+
+/* for sticky nav, not using */
+.sticky {
+	background-color: transparent;
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+}
+
+
+/* intro */
+.intro {
+    background-image: url(/unflat02.github.io/WIMTS/img/g0.1.png);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.intro-box {
+    font-size: 1.5em;
+    line-height: 1;
+}
+
+.intro-dot a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 3em;
+
+    animation: circlePulse 2s ease-in-out infinite;
+}
+
+.home-dot {
+    background-color: transparent;
+    border: 1px solid black;
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+    transition: .3s all ease-in-out;
+}
+
+.home-dot:hover{
+    background-color: white;
+    opacity: .7;
+}
+
+
+
+/* title */
+.title {
+    background-image: url(/WIMTS/img/g0.1.png);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    background-color: transparent;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title-text {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    width: 50%;
+}
+
+.title-text h2 {
+    color: black;
+    line-height: 1.;
+    font-size: 4.2em;
+    font-weight: 600;
+    text-align: left;
+    margin-bottom: 1em;
+}
+
+.title-text h3 {
+    color: black;
+    font-size: 2rem;
+    font-weight: 400;
+    text-align: left;
+    margin-bottom: 1em;
+}
+
+.title-text p {
+    color: black;
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-align: left;
+    font-style: italic;
+    margin-bottom: 2em;
+}
+
+.title-button {
+    align-items: center;
+    justify-content: center;
+}
+
+.title-button a{
+    border: 2px solid black;
+    background-color: transparent;
+    color: black;
+    border-radius: 100px;
+    padding: 5px 20px;
+    text-decoration: none;
+    font-family: 'Cutive Mono';
+    transition: .3s all ease-in-out;
+
+}
+
+.title-button a:hover{
+    background-color: white;
+    opacity: .7;
+}
+
+/* scroller  */
+.scroller {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 100%;
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+}
+
+.scroll-page {
+    display: grid;
+    grid-template-rows: min-content;
+}
+
+.scroll-page img {
+    inline-size: 100%;
+    /* how to make images better size */
+}
+
+/* poem navigation  */
+.circle-button-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 8rem;
+}
+
+.circle-button-blue {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    background-color: transparent;
+    border: 1px solid rgb(146, 194, 189);
+    /* color: ; */
+    animation: circlePulse 2.5s ease-in-out infinite;
+}
+
+.circle-button-blue:hover {
+    background-color: rgb(146, 194, 189);
+    opacity: .7;
+}
+
+.circle-button-pink {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    background-color: transparent;
+    border: 1px solid rgb(247, 199, 195);
+    /* color: ; */
+    animation: circlePulse 2.5s ease-in-out infinite;
+}
+
+.circle-button-pink:hover {
+    background-color:rgb(247, 199, 195);
+    opacity: .7;
+}
+
+.circle-button-yellow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    background-color: transparent;
+    border: 1px solid rgb(254, 192, 16);
+    /* color: ; */
+    animation: circlePulse 2.5s ease-in-out infinite;
+}
+
+.circle-button-yellow:hover {
+    background-color: rgb(254, 192, 16);
+    opacity: .7;
+}
+
+.poemnav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.snaps-inline {
+    scroll-snap-type: inline mandatory;
+}
+
+.snaps-inline > * {
+    scroll-snap-align: center;
+}
+
+/* reflections */
+.reflections {
+    /* background-color: rgb(230, 179, 232); */
+    background-image: url(/WIMTS/img/g1.png);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.box {
+    width: auto;
+}
+
+.reflections-text {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    margin: 2em;
+}
+
+.reflections-text h2 {
+    color: black;
+    font-size: 4.2em;
+    font-weight: 600;
+    text-align: justify;
+    /* margin-bottom: 1em; */
+}
+
+.reflections-text h3 {
+    color: black;
+    font-size: 1.6rem;
+    font-weight: 400;
+    text-align: justify;
+    margin-bottom: 1em;
+}
+
+.reflections-text p {
+    color: black;
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-align: justify;
+    font-style: italic;
+    margin-bottom: 4em;
+}
+
+.reflections-button {
+    margin: 2em;
+    align-items: left;
+}
+
+.reflections-button a{
+    border: 2px solid black;
+    background-color: transparent;
+    color: black;
+    border-radius: 100px;
+    padding: 5px 20px;
+    text-decoration: none;
+    font-family: 'Cutive Mono';
+    transition: .3s all ease-in-out;
+}
+
+.reflections-button a:hover{
+    background-color: white;
+    opacity: .7;
+}
+
+/* relations */
+.relations {
+    /* background-color: rgb(103, 154, 157); */
+    background-image: url(/WIMTS/img/g2.png);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.relations-text {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    /* margin: 2em; */
+}
+
+.relations-text h2 {
+    color: black;
+    font-size: 4.2em;
+    font-weight: 600;
+    text-align: justify;
+    /* margin-bottom: 1em; */
+}
+
+.relations-text h3 {
+    color: black;
+    font-size: 1.6rem;
+    font-weight: 400;
+    text-align: justify;
+    margin-bottom: 1em;
+}
+
+.relations-text p {
+    color: black;
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-align: justify;
+    font-style: italic;
+    margin-bottom: 2em;
+}
+
+.relations-button {
+    margin-top: 2em;
+    display: inline;
+    align-items: left;
+    justify-content: left;
+}
+
+.relations-button a{
+    border: 2px solid black;
+    background-color: transparent;
+    color: black;
+    border-radius: 100px;
+    padding: 5px 20px;
+    text-decoration: none;
+    font-family: 'Cutive Mono';
+    transition: .3s all ease-in-out;
+}
+
+.relations-button a:hover{
+    background-color: white;
+    opacity: .7;
+}
+
+/* reverberations */
+.reverberations {
+    /* background-color: rgb(250, 215, 44); */
+    background-image: url(/WIMTS/img/g3.png);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.reverberations-text {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    /* margin: 2em; */
+}
+
+.reverberations-text h2 {
+    color: black;
+    font-size: 4.2em;
+    font-weight: 600;
+    text-align: justify;
+    /* margin-bottom: 1em; */
+}
+
+.reverberations-text h3 {
+    color: black;
+    font-size: 1.6rem;
+    font-weight: 400;
+    text-align: justify;
+    /* margin-bottom: 1em; */
+}
+
+.reverberations-text p {
+    color: black;
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-align: justify;
+    font-style: italic;
+    margin-bottom: 2em;
+}
+
+.reverberations-button {
+    margin-top: 2em; 
+
+}
+
+.reverberations-button a{
+    border: 2px solid black;
+    background-color: transparent;
+    color: black;
+    border-radius: 100px;
+    padding: 5px 20px;
+    text-decoration: none;
+    font-family: 'Cutive Mono';
+    transition: .3s all ease-in-out;
+}
+
+.reverberations-button a:hover{
+    background-color: white;
+    opacity: .7;
+}
+
+/* poem images */
+
+.container img {
+    width: auto;
+    height: 300px;
+}
+
+/* poem containters */
+
+.container {
+    background-color: rgb(255, 255, 255);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container p {
+    color: black;
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-align: justify;
+    text-decoration: none;
+    font-family: 'Cutive Mono';
+    margin-bottom: 2em;
+}
